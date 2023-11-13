@@ -1,0 +1,66 @@
+.form {
+	margin-top: var(--space-medium);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form input {
+	width: 25rem;
+	height: 4rem;
+	border: 1px solid var(--COMPANY-dark-gray);
+	border-radius: var(--border-radius-small);
+	margin-top: var(--space-small);
+	padding-left: var(--space-small);
+}
+
+.form input::placeholder {
+	color: var(--COMPANY-dark-gray);
+	font-size: var(--font-size-text);
+}
+
+.validator {
+	color: red;
+	font-size: var(--font-size-text-small);
+	margin-top: var(--space-small);
+}
+
+.validator--login {
+	font-size: var(--font-size-text);
+	font-weight: var(--font-weight-text-bold);
+}
+
+.button {
+	background-color: var(--COMPANY-dark);
+	color: var(--COMPANY-white);
+	font-weight: bold;
+	border: none;
+	width: 9rem;
+	height: 3.5rem;
+	border-radius: var(--border-radius-small);
+	margin-top: var(--space-medium);
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: var(--COMPANY-blue);
+}
+
+@media (min-width: 768px) {
+	.form {
+		margin-top: var(--space-big);
+	}
+
+	.form input {
+		width: 39rem;
+		height: 4rem;
+	}
+
+	.button {
+		font-size: var(--font-size-text-medium);
+		width: 13rem;
+		height: 4.5rem;
+		margin-top: var(--space-big);
+	}
+}

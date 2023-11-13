@@ -1,0 +1,29 @@
+.dashboard {
+	height: auto;
+}
+
+.mock_component {
+	height: var(--height-full-viewport);
+	background: var(--COMPANY-gray);
+	border-top: var(--height-border-top) solid transparent;
+	box-shadow: 0px 3px 2px var(--COMPANY-dark-gray);
+	font-size: var(--font-size-text);
+	font-weight: var(--font-weight-text);
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Media Queries*/
+
+/*Desktop*/
+
+@media screen and (min-width: 1440px) {
+	.mock_component {
+		/*In desktop version, the navbar with a width of 22rem
+		takes a fixed position at the left. This margin is to
+		compensate the width of the navbar*/
+		margin-left: 22rem;
+	}
+}

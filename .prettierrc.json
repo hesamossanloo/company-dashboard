@@ -1,0 +1,37 @@
+{
+	"bracketSpacing": true,
+	"printWidth": 120,
+	"proseWrap": "preserve",
+	"semi": true,
+	"singleQuote": true,
+	"trailingComma": "es5",
+	"tabWidth": 2,
+	"useTabs": true,
+	"overrides": [
+		{
+			"files": ["*.json", "*.jsonc", "*.json5"],
+			"options": {
+				"parser": "json"
+			}
+		},
+		{
+			"files": ".*rc",
+			"options": {
+				"singleQuote": false,
+				"parser": "json"
+			}
+		},
+		{
+			"files": ["*.ts", "*.tsx"],
+			"options": {
+				"parser": "babel-ts"
+			}
+		},
+		{
+			"files": ["*.css"],
+			"options": {
+				"parser": "css"
+			}
+		}
+	]
+}

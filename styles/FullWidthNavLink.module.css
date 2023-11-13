@@ -1,0 +1,14 @@
+/* FullWidthNavLink.module.css */
+
+.navLink {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px; /* adjust as needed */
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.selected {
+	background-color: #e7edf3; /* Replace with the actual color you want */
+}

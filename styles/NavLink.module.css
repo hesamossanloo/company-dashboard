@@ -1,0 +1,77 @@
+.nav_icon_holder {
+	position: relative;
+}
+
+.icon {
+	height: 4rem;
+	width: 4rem;
+}
+
+.icon--advisor {
+	width: 3rem;
+}
+
+.icon--billing {
+	height: 3.5rem;
+	width: 3rem;
+}
+
+.nav_link_label {
+	display: none;
+}
+
+/*Media Queries*/
+
+/*Desktop*/
+
+@media screen and (min-width: 1440px) {
+	.nav_link {
+		display: flex;
+		align-items: center;
+		gap: var(--space-medium);
+	}
+
+	.nav_icon_holder {
+		position: relative;
+	}
+
+	.icon {
+		height: 3rem;
+		width: 3rem;
+		margin-right: var(--space-x-small);
+	}
+
+	.icon--home {
+		width: 2.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.icon--advisor {
+		width: 2.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.icon--overview {
+		height: 2.8rem;
+		width: 2.8rem;
+		margin-left: -0.3rem;
+		margin-right: var(--space-x-small);
+	}
+
+	.icon--search {
+		width: 2.6rem;
+		margin-left: 0.2rem;
+	}
+
+	.icon--billing {
+		width: 3rem;
+	}
+
+	.nav_link_label {
+		display: block;
+		font-size: var(--font-size-text);
+		font-weight: var(--font-weight-text);
+		text-transform: capitalize;
+		text-align: start;
+	}
+}
